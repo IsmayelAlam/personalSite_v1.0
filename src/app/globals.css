@@ -1,0 +1,32 @@
+:root {
+  --color01: #000000;
+  --color02: #14213d;
+  --color03: #fca311;
+  --color04: #e5e5e5;
+  --color05: #ffffff;
+
+  --color01: #3d5a80;
+  --color02: #98c1d9;
+  --color03: #e0fbfc;
+  --color04: #ee6c4d;
+  --color05: #293241;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  z-index: 0;
+}
+
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-size: 62.5%;
+}
+
+main {
+  min-height: 100vh;
+  position: relative;
+  background-color: var(--color01);
+}

@@ -1,0 +1,13 @@
+.navBar {
+  color: var(--color01);
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  text-decoration: none;
+  backdrop-filter: blur(5px);
+  border: 2px solid var(--color01);
+  font-size: 2rem;
+  padding: 1rem;
+  margin: 1rem;
+  z-index: 10;
+}
