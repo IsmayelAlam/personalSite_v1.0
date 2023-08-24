@@ -2,6 +2,7 @@ import { Nunito } from "next/font/google";
 import Image from "next/image";
 
 import style from "../styles/Intro.module.css";
+import artwork from "@/assets/art.svg";
 
 const nunito = Nunito({ subsets: ["latin"], weight: ["500"] });
 
@@ -20,12 +21,16 @@ export default function Intro() {
           user-friendly websites.
         </p>
         <a className={style.btn}>Get in touch</a>
-        <a className={style.btn} href="/ismayel_alam_resume.pdf" download>
+        <a
+          className={style.btn}
+          href="../assets/ismayel_alam_resume.pdf"
+          download
+        >
           Download CV
         </a>
       </div>
       <Image
-        src="/art.svg"
+        src={artwork}
         alt="logo"
         width={700}
         height={700}

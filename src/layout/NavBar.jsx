@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import { navigation } from "../utils/data";
 import style from "../styles/NavBar.module.css";
-import logo from "../../Public/logo.svg";
+import logo from "@/assets/logo.svg";
 
 export default function NavBar() {
   return (
