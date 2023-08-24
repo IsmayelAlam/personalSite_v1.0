@@ -1,7 +1,8 @@
+import Image from "next/image";
+
 import { navigation } from "../utils/data";
 import style from "../styles/NavBar.module.css";
 import logo from "../../Public/logo.svg";
-import Image from "next/image";
 
 export default function NavBar() {
   return (
