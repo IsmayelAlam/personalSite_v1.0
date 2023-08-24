@@ -2,7 +2,7 @@ import NavBar from "@/layout/NavBar";
 import "./globals.css";
 import { Roboto } from "next/font/google";
 
-const inter = Roboto({ subsets: ["latin"], weight: ["500"] });
+const inter = Roboto({ subsets: ["latin"], weight: ["400"] });
 
 export const metadata = {
   title: "Ismayel Alam",

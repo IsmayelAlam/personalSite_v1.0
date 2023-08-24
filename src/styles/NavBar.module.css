@@ -3,7 +3,6 @@
   left: 50%;
   transform: translateX(-50%);
   width: 80vw;
-  text-decoration: none;
 
   z-index: 10;
   text-transform: capitalize;
@@ -16,9 +15,13 @@
 .links {
   padding: 2.5rem 0;
   display: flex;
-  color: var(--color05);
   list-style: none;
   font-size: 2rem;
   gap: 2rem;
   cursor: pointer;
+}
+
+.links a {
+  text-decoration: none;
+  color: var(--color05);
 }

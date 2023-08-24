@@ -2,16 +2,17 @@ import { Nunito } from "next/font/google";
 import Image from "next/image";
 
 import style from "../styles/Intro.module.css";
-import artwork from "../../Public/Art.svg";
 
 const nunito = Nunito({ subsets: ["latin"], weight: ["500"] });
 
 export default function Intro() {
   return (
-    <section className={`${style.Intro} ${nunito.className}`}>
+    <section className={style.Intro}>
       <div>
-        <p className={style.greet}>Hi! I&apos;m</p>
-        <h1 className={style.header}>Ismayel Alam</h1>
+        <div className={nunito.className}>
+          <p className={style.greet}>Hi! I&apos;m</p>
+          <h1 className={style.header}>Ismayel Alam</h1>
+        </div>
         <p className={style.description}>
           A passionate and self-taught front-end web developer with a strong
           foundation in HTML, CSS, and JavaScript. Seeking opportunities to
@@ -23,7 +24,13 @@ export default function Intro() {
           Download CV
         </a>
       </div>
-      <Image src={artwork} alt="logo" className={style.heroImage} />
+      <Image
+        src="/art.svg"
+        alt="logo"
+        width={700}
+        height={700}
+        className={style.heroImage}
+      />
     </section>
   );
 }

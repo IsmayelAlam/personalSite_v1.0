@@ -11,7 +11,9 @@ export default function NavBar() {
         <Image src={logo} alt="logo" width={60} height={60} />
         <ul className={style.links}>
           {navigation.map((link) => (
-            <li key={link.title}>{link.title}</li>
+            <li key={link.title}>
+              <a href={link.link}>{link.title}</a>
+            </li>
           ))}
         </ul>
       </nav>
