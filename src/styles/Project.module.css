@@ -1,0 +1,12 @@
+.projects {
+  width: 80vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.details {
+  margin: 5rem 0;
+  height: calc(100% - 10rem);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
