@@ -5,7 +5,7 @@ export default function Project() {
   return (
     <section className={style.projects} id="projects">
       <SectionHeader title="Projects" />
-      <div className={style.details}>
+      {/* <div className={style.details}>
         <div>
           <h3>title</h3>
           <p>
@@ -40,7 +40,7 @@ export default function Project() {
           </div>
         </div>
         <div>project image and link</div>
-      </div>
+      </div> */}
     </section>
   );
 }
