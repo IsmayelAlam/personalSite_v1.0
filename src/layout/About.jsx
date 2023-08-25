@@ -2,6 +2,8 @@ import SectionHeader from "@/components/SectionHeader";
 import style from "../styles/About.module.css";
 import Image from "next/image";
 
+import myImg from "../assets/myImg.svg";
+
 export default function About() {
   return (
     <section className={style.about} id="about">
@@ -34,7 +36,7 @@ export default function About() {
         </p>
       </div>
       <Image
-        src="/myImg.svg"
+        src={myImg}
         width={500}
         height={500}
         alt="a photo of ismayel alam"

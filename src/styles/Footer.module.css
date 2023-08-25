@@ -3,4 +3,17 @@
   padding: 1rem 0;
   line-height: 2.4rem;
   background-color: var(--color03);
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+@media screen and (max-width: 60em) {
+  .footer {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 30em) {
+  .footer {
+    font-size: 1rem;
+  }
 }

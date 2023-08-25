@@ -34,26 +34,62 @@
   padding: 5rem;
 }
 
-@media (max-width: 1200px) {
+@media screen and (max-width: 100em) {
   .about {
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-
-    width: 95%;
+    width: 90%;
+    height: 42rem;
+  }
+}
+@media screen and (max-width: 80em) {
+  .about {
+    width: 97.5%;
     height: max-content;
-    border-radius: 1rem;
+    overflow: hidden;
+    border-radius: 2.5rem;
   }
   .heading {
     font-size: 2.4rem;
   }
+  .myImage {
+    margin-top: 1.5rem;
+    border-radius: 0;
+  }
+}
+
+@media screen and (max-width: 60em) {
+  .about {
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .myImage {
+    margin-top: 0;
+    margin-bottom: -3.5rem;
+  }
+}
+
+@media screen and (max-width: 40em) {
+  .about {
+    width: 95%;
+  }
   .description {
-    font-size: 1.2rem;
-    padding: 2rem 1rem;
-    margin-bottom: 2.5rem;
+    padding: 2rem;
   }
   .myImage {
     height: fit-content;
     margin-bottom: -3.5rem;
+  }
+}
+
+@media screen and (max-width: 20em) {
+  .about {
+    border-radius: 1rem;
+  }
+  .heading {
+    font-size: 1.8rem;
+  }
+  .description {
+    font-size: 1.2rem;
+    padding: 1rem;
   }
 }
