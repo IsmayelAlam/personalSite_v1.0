@@ -5,46 +5,41 @@ import Image from "next/image";
 export default function About() {
   return (
     <section className={style.about} id="about">
-      <SectionHeader title="About" />
-      <div className={style.details}>
-        <div className={style.description}>
-          <p>
-            I&apos;m a self-taught web developer based in Bangladesh working as
-            a freelancer. I mainly use JavaScript, react, and many other tools,
-            libraries, and languages for my daily work. 
-          </p>
-          <p>
-            I started working as a web developer a few years ago and have been
-            working on many projects since for both personal and clients. I love
-            learning new things and continuously improving my skills. 
-          </p>
-          <p>
-            Besides web development, I&apos;ve many areas of interest. As a
-            hobby, I like to do 3d modelling work. I also planned to learn a
-            musical instrument(piano) someday. One of my favourite pass time
-            activities is to read books. I read mostly fantasy genres and
-            Brandon Sanderson is my current favourite writer. 
-          </p>
-          <p>
-            I liked to plan everything and try to follow a routine for
-            day-to-day activities. Work is essential, and so are health and
-            family so I divide my time accordingly and always focus on what
-            I&apos;m doing. I&apos;m not very active on social media but I
-            always prioritize real human communication. 
-          </p>
-          <p>
-            I&apos;m willing to help anyone in need. I would love to hear from
-            you, send an email through the form, and let&apos;s connect!
-          </p>
-        </div>
-        <Image
-          src="/myImg.jpeg"
-          width={250}
-          height={250}
-          alt="a photo of ismayel alam"
-          className={style.myImage}
-        />
+      <div className={style.description}>
+        <h2 className={style.heading}>Little about me 👋</h2>
+        <p>
+          I&apos;m a self-taught web developer based in Bangladesh, proudly
+          freelancing my way through the digital world. My daily grind is a
+          delightful mix of JavaScript, React, and all sorts of tools and
+          languages, as I whip up web wonders for clients and dabble in personal
+          projects. I jumped onto this wild ride a few years back and
+          haven&apos;t stopped learning since!
+        </p>
+        <p>
+          When I&apos;m not coding up a storm, you&apos;ll find me getting my
+          creative groove on with 3D modeling or daydreaming about mastering the
+          piano. Oh, and I&apos;m an avid fantasy bookworm, with Brandon
+          Sanderson as my current literary wizard.
+        </p>
+        <p>
+          Life is all about balance, right? I&apos;m a big believer in planning
+          my days to make time for work, family, and, of course, self-care. In
+          an age of social media madness, I&apos;m all about real, meaningful
+          conversations and connections.
+        </p>
+        <p>
+          Drop me a line through the email form - let&apos;s chat, swap stories,
+          and dive into the vast sea of shared interests and knowledge. I&apos;m
+          all ears and excited to connect! 🤗
+        </p>
       </div>
+      <Image
+        src="/myImg.svg"
+        width={500}
+        height={500}
+        alt="a photo of ismayel alam"
+        className={style.myImage}
+      />
     </section>
   );
 }

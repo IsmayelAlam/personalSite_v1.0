@@ -5,3 +5,5 @@ export const navigation = [
   { title: "about", link: "#about" },
   { title: "contact", link: "#contact" },
 ];
+
+export const skills = [{ title: "Javascript" }];

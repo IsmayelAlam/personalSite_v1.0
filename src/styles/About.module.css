@@ -1,27 +1,59 @@
 .about {
   width: 80%;
-  margin: 2.5rem auto;
-  padding: 5rem 0;
+  height: 40rem;
+  margin: 10rem auto;
+  position: relative;
+  background-color: var(--color02);
+
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  border-radius: 5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+
+.heading {
+  font-weight: 500;
+  font-size: 3.2rem;
+  color: var(--color03);
+  margin-bottom: 1rem;
 }
 
 .myImage {
-  border-radius: 50%;
-}
-
-.details {
-  padding: 5rem 0;
-  display: flex;
-  align-items: center;
-  gap: 5rem;
-  padding: 5rem 0;
-  justify-content: center;
+  filter: sepia(25%) grayscale(100%);
+  max-width: 95%;
+  border-radius: 5rem 0;
 }
 
 .description {
-  width: 50%;
   text-align: start;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+  padding: 5rem;
+}
+
+@media (max-width: 1200px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+
+    width: 95%;
+    height: max-content;
+    border-radius: 1rem;
+  }
+  .heading {
+    font-size: 2.4rem;
+  }
+  .description {
+    font-size: 1.2rem;
+    padding: 2rem 1rem;
+    margin-bottom: 2.5rem;
+  }
+  .myImage {
+    height: fit-content;
+    margin-bottom: -3.5rem;
+  }
 }
