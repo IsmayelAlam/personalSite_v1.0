@@ -1,57 +1,41 @@
 import { BsGithub, BsLinkedin, BsSend } from "react-icons/bs";
+import { CiLocationOn } from "react-icons/ci";
 import { IoCallOutline, IoMailOutline } from "react-icons/io5";
 
 import style from "../styles/Contact.module.css";
-import MapChart from "@/components/Map";
+import Map from "@/components/Map";
+import ContactForm from "@/components/ContactForm";
 
 export default function Contact() {
   return (
     <section className={style.contact} id="contact">
-      <div className={style.map}>
-        <MapChart />
-      </div>
-      <form className={style.form}>
-        <h4 className={style.heading}>get in touch</h4>
-        <input
-          type="text"
-          required
-          className={style.input}
-          placeholder="Name"
-        />
-        <input
-          type="email"
-          required
-          className={style.input}
-          placeholder="Email"
-        />
-        <textarea
-          name=""
-          id=""
-          cols="30"
-          rows="10"
-          className={style.input}
-          placeholder="Message"
-          required
-        ></textarea>
-        <button type="submit" className={style.btn}>
-          <span>send</span>
-          <BsSend />
-        </button>
-      </form>
+      <Map />
+
+      <ContactForm />
+
       <div className={style.social}>
-        <div className={style.mails}>
-          <p className={style.mail}>
-            <IoMailOutline className={style.icons} />
-            <span> Ismayelalam0@gmail.com</span>
+        <div>
+          <p className={style.link}>
+            <CiLocationOn className={style.icons} />
+            <span> Narayanganj, Bangladesh</span>
           </p>
-          <p className={style.mail}>
+          <p className={style.link}>
+            <IoMailOutline className={style.icons} />
+            <a href="mailto:Ismayelalam0@gmail.com"> Ismayelalam0@gmail.com</a>
+          </p>
+          <p className={style.link}>
             <IoCallOutline className={style.icons} />
-            <span>(+880) 1626 256336</span>
+            <a href="tel:(+880) 1626 256336">(+880) 1626 256336</a>
           </p>
         </div>
+
         <div className={style.links}>
-          <BsLinkedin className={style.icons} />
-          <BsGithub className={style.icons} />
+          <a href="https://www.linkedin.com/in/ismayelalam/" target="_blank">
+            <BsLinkedin className={style.icons} />
+          </a>
+          <a href="https://github.com/IsmayelAlam" target="_blank">
+            <BsGithub className={style.icons} />
+          </a>
         </div>
       </div>
     </section>
