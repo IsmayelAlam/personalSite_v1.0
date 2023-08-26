@@ -3,7 +3,7 @@
   margin: 2.5rem auto;
   padding: 2rem 0;
   background-color: var(--color02);
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadowSm);
 }
 
 .animation {
@@ -53,7 +53,7 @@
 .items:hover {
   background-color: var(--color03);
   color: var(--color01);
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadowMd);
 }
 
 .img {

@@ -4,11 +4,11 @@
   justify-content: center;
   gap: 1rem;
 
-  height: 70%;
   min-width: 40rem;
   max-width: 100%;
 
   margin: 0 25rem;
+  padding: 7.5rem 0;
 
   background-color: var(--color02);
   box-shadow: var(--shadowMd);
@@ -72,13 +72,14 @@
   gap: 3rem;
 }
 
-@media screen and (max-width: 120em) {
+@media screen and (max-width: 112em) {
   .form {
     margin: 0 15rem;
   }
 }
 @media screen and (max-width: 80em) {
   .form {
+    padding: 5rem 0;
     margin: 0 5rem 0;
   }
 }
@@ -86,7 +87,7 @@
 @media screen and (max-width: 60em) {
   .form {
     height: fit-content;
-    padding: 2rem 0;
+    padding: 2.5rem 0;
   }
 }
 @media screen and (max-width: 40em) {
@@ -94,7 +95,7 @@
     min-width: fit-content;
     height: 80%;
     margin: 0;
-    padding: 25rem 0 5rem;
+    padding: 25rem 0 10rem;
     border-radius: 0%;
     z-index: 10;
     background-color: transparent;
@@ -107,7 +108,7 @@
 
 @media screen and (max-width: 20em) {
   .form {
-    padding: 15rem 0 2rem;
+    padding: 15rem 0 10rem;
   }
   .input {
     width: 100%;

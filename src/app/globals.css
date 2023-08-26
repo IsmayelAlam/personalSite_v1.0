@@ -5,6 +5,7 @@
   --color04: #ee6c4d;
   --color05: #293241;
 
+  --shadowSm: 0 0 1rem rgba(0, 0, 0, 0.1);
   --shadowMd: 0 0 1rem rgba(0, 0, 0, 0.2);
 }
 
