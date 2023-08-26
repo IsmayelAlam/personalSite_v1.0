@@ -10,8 +10,8 @@ export default function Contact() {
       <div className={style.map}>
         <MapChart />
       </div>
-      <form action="" className={style.form}>
-        <h4 className={style.heading}>let&apos;s get in touch</h4>
+      <form className={style.form}>
+        <h4 className={style.heading}>get in touch</h4>
         <input
           type="text"
           required

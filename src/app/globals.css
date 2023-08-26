@@ -35,3 +35,13 @@ main {
 ::-webkit-scrollbar {
   display: none;
 }
+
+path {
+  user-select: none;
+  outline: none;
+}
+
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+}

@@ -1,11 +1,22 @@
 .skills {
   width: 100%;
   margin: 2.5rem auto;
+  padding: 2rem 0;
   background-color: var(--color02);
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+.animation {
   display: flex;
   align-items: center;
-  justify-content: center;
+}
+
+.heading {
+  font-weight: 500;
+  font-size: 3.2rem;
+  color: var(--color03);
+  text-align: center;
+  text-transform: capitalize;
 }
 
 .details {
@@ -14,32 +25,49 @@
 }
 
 .img {
-  width: 7.5rem;
+  width: 5rem;
+  height: 5rem;
 }
 
 .list {
-  padding: 2.5rem 0;
   list-style: none;
   display: flex;
   gap: 2rem;
-}
 
-.items:first-child {
-  background-color: var(--color03);
-  color: var(--color01);
+  align-items: center;
+  justify-content: center;
+  animation: slideshow 30s linear infinite;
+}
+.animation:hover > * {
+  animation-play-state: paused;
 }
 
 .items {
-  flex: 0;
-  padding: 2rem 3rem;
+  width: 100%;
+  padding: 1rem 3rem;
   text-transform: capitalize;
-  text-align: center;
   color: var(--color05);
   cursor: pointer;
   border-radius: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .items:hover {
   background-color: var(--color03);
   color: var(--color01);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+
+@keyframes slideshow {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }

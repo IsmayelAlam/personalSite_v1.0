@@ -23,9 +23,8 @@ export default function MapChart() {
     >
       <Geographies
         geography={geoUrl}
-        fill="#e0fbfc"
-        stroke="#3d5a80"
         strokeWidth={1}
+        style={{ stroke: "var(--color02)", fill: "var(--color03)" }}
       >
         {({ geographies }) =>
           geographies.map((geo) => (
@@ -35,23 +34,23 @@ export default function MapChart() {
       </Geographies>
       <Annotation
         subject={[90, 24]}
-        dx={90}
+        dx={70}
         dy={-60}
-        curve={1}
+        curve={0.8}
         connectorProps={{
           stroke: "#ee6c4d",
-          strokeWidth: 2,
+          strokeWidth: 1,
           strokeLinecap: "round",
         }}
       >
         <text
-          x="80"
-          y="0"
+          x="35"
           textAnchor="end"
+          fontSize={12}
           alignmentBaseline="middle"
           fill="#ee6c4d"
         >
-          From here
+          Hello!
         </text>
       </Annotation>
     </ComposableMap>
