@@ -1,4 +1,3 @@
-import SectionHeader from "@/components/SectionHeader";
 import style from "../styles/About.module.css";
 import Image from "next/image";
 
@@ -8,7 +7,7 @@ export default function About() {
   return (
     <section className={style.about} id="about">
       <div className={style.description}>
-        <h2 className={style.heading}>Little about me 👋</h2>
+        <h2 className={style.heading}>Little About Me 👋</h2>
         <p>
           I&apos;m a self-taught web developer based in Bangladesh, proudly
           freelancing my way through the digital world. My daily grind is a
@@ -30,16 +29,16 @@ export default function About() {
           conversations and connections.
         </p>
         <p>
-          Drop me a line through the email form - let&apos;s chat, swap stories,
-          and dive into the vast sea of shared interests and knowledge. I&apos;m
-          all ears and excited to connect! 🤗
+          Drop me a line through the form - let&apos;s chat, swap stories, and
+          dive into the vast sea of shared interests and knowledge. I&apos;m all
+          ears and excited to connect! 🤗
         </p>
       </div>
       <Image
         src={myImg}
         width={500}
         height={500}
-        alt="a photo of ismayel alam"
+        alt="a photo of Ismayel Alam"
         className={style.myImage}
       />
     </section>

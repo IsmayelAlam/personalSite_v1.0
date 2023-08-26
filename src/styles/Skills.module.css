@@ -1,7 +1,11 @@
 .skills {
-  width: 80%;
+  width: 100%;
   margin: 2.5rem auto;
-  padding: 5rem 0;
+  background-color: var(--color02);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .details {
@@ -9,23 +13,33 @@
   gap: 5rem;
 }
 
+.img {
+  width: 7.5rem;
+}
+
 .list {
-  width: 33%;
-  padding: 5rem 0;
+  padding: 2.5rem 0;
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
   gap: 2rem;
+}
+
+.items:first-child {
+  background-color: var(--color03);
+  color: var(--color01);
 }
 
 .items {
   flex: 0;
-  background-color: var(--color04);
-  padding: 1rem 0;
+  padding: 2rem 3rem;
   text-transform: capitalize;
-  width: 10rem;
   text-align: center;
-  border-radius: 50rem;
-  color: var(--color03);
-  font-weight: 500;
+  color: var(--color05);
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.items:hover {
+  background-color: var(--color03);
+  color: var(--color01);
 }

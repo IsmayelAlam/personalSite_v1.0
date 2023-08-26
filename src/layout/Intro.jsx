@@ -2,7 +2,7 @@ import { Nunito } from "next/font/google";
 import Image from "next/image";
 
 import style from "../styles/Intro.module.css";
-import artwork from "../assets/art.svg";
+import artwork from "../assets/artwork.svg";
 
 const nunito = Nunito({ subsets: ["latin"], weight: ["500"] });
 
