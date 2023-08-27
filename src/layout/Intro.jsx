@@ -1,10 +1,9 @@
 import { Nunito } from "next/font/google";
-import Image from "next/image";
 
 import style from "../styles/Intro.module.css";
-import artwork from "../assets/artwork.svg";
 import { BsDownload } from "react-icons/bs";
 import { BiSend } from "react-icons/bi";
+import Artwork from "@/components/artwork";
 
 const nunito = Nunito({ subsets: ["latin"], weight: ["500"] });
 
@@ -33,13 +32,7 @@ export default function Intro() {
           </a>
         </div>
       </div>
-      <Image
-        src={artwork}
-        alt="logo"
-        width={700}
-        height={700}
-        className={style.heroImage}
-      />
+      <Artwork />
     </section>
   );
 }

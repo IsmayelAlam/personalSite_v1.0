@@ -65,12 +65,6 @@
   padding-right: 1.5rem;
 }
 
-.heroImage {
-  justify-self: center;
-  width: 70rem;
-  height: 70rem;
-}
-
 @keyframes slideIn {
   0% {
     transform: translateY(50%);
@@ -97,10 +91,6 @@
   .intro {
     padding: 2.5rem;
   }
-  .heroImage {
-    width: 50rem;
-    height: auto;
-  }
 }
 @media screen and (max-width: 80em) {
   .description {
@@ -115,9 +105,10 @@
 }
 @media screen and (max-width: 60em) {
   .intro {
+    grid-template-columns: 1fr;
     justify-content: center;
     justify-items: center;
-    grid-template-columns: 1fr;
+    margin: auto auto;
   }
   .description {
     text-align: center;
@@ -136,15 +127,13 @@
   .header {
     font-size: 5.2rem;
   }
-  .heroImage {
-    width: 100%;
-  }
 }
 @media screen and (max-width: 20em) {
   .header {
     font-size: 4.2rem;
   }
-  .heroImage {
+
+  .btn > span {
     display: none;
   }
 }
