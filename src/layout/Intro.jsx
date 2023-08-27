@@ -3,7 +3,7 @@ import { Nunito } from "next/font/google";
 import style from "../styles/Intro.module.css";
 import { BsDownload } from "react-icons/bs";
 import { BiSend } from "react-icons/bi";
-import Artwork from "@/components/artwork";
+import Artwork from "@/components/Artwork";
 
 const nunito = Nunito({ subsets: ["latin"], weight: ["500"] });
 
