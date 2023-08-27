@@ -3,13 +3,15 @@ import Image from "next/image";
 
 import style from "../styles/Intro.module.css";
 import artwork from "../assets/artwork.svg";
+import { BsDownload } from "react-icons/bs";
+import { BiSend } from "react-icons/bi";
 
 const nunito = Nunito({ subsets: ["latin"], weight: ["500"] });
 
 export default function Intro() {
   return (
-    <section className={style.Intro}>
-      <div>
+    <section className={style.intro}>
+      <div className={style.description}>
         <div className={nunito.className}>
           <p className={style.greet}>Hi! I&apos;m</p>
           <h1 className={style.header}>Ismayel Alam</h1>
@@ -20,12 +22,16 @@ export default function Intro() {
           leverage my skills and creativity to build visually stunning and
           user-friendly websites.
         </p>
-        <a className={style.btn} href="#contact">
-          Get in touch
-        </a>
-        <a className={style.btn} href="/ismayel_alam_resume.pdf" download>
-          Download CV
-        </a>
+        <div className={style.links}>
+          <a className={style.btn} href="#contact">
+            <span>Get in touch</span>
+            <BiSend />
+          </a>
+          <a className={style.btn} href="/ismayel_alam_resume.pdf" download>
+            <span>Download CV</span>
+            <BsDownload />
+          </a>
+        </div>
       </div>
       <Image
         src={artwork}

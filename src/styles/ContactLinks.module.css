@@ -2,6 +2,7 @@
   width: fit-content;
   margin: 0 auto;
   padding-left: 20rem;
+  z-index: 10;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -55,5 +56,15 @@
     width: 2rem;
     height: 2rem;
     cursor: pointer;
+  }
+}
+
+@media (max-height: 30em) and (orientation: landscape) {
+  .links {
+    display: block;
+    font-size: 1.4rem;
+
+    margin: 0;
+    padding: 0;
   }
 }

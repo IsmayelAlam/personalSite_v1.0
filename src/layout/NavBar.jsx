@@ -4,6 +4,7 @@ import { Nunito } from "next/font/google";
 import { navigation } from "../utils/data";
 import style from "../styles/NavBar.module.css";
 import logo from "@/assets/logo.svg";
+import { BsFillSunFill } from "react-icons/bs";
 
 const nunito = Nunito({ subsets: ["latin"], weight: ["900", "600"] });
 
@@ -22,13 +23,16 @@ export default function NavBar() {
             </li>
           ))}
         </ul>
-        <Image
-          src={logo}
-          alt="logo"
-          width={50}
-          height={50}
-          className={style.logo}
-        />
+        <div className={style.btn}>
+          <Image
+            src={logo}
+            alt="logo"
+            width={50}
+            height={50}
+            className={style.logo}
+          />
+        </div>
+        <BsFillSunFill className={style.icons} />
       </nav>
     </header>
   );

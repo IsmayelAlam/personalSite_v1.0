@@ -18,7 +18,7 @@
   height: 100%;
   position: absolute;
   top: 0%;
-  z-index: 0;
+  z-index: -10;
 }
 
 .social {
@@ -37,6 +37,13 @@
 }
 
 @media screen and (max-width: 40em) {
+  .contact {
+    display: block;
+    height: fit-content;
+    padding: 0;
+  }
+}
+@media (max-height: 30em) and (orientation: landscape) {
   .contact {
     display: block;
     height: fit-content;

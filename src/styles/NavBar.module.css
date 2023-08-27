@@ -22,23 +22,32 @@
   right: 0%;
 }
 
-.sidebar > div {
-  display: block;
-  width: min-content;
-  margin: 0;
-  padding: 0;
-}
-
-.logo {
+.btn {
   position: fixed;
   bottom: 5%;
   right: 2.5%;
-  z-index: 100;
-  background-color: var(--color04);
+  cursor: pointer;
+  width: 5rem;
+  height: 5rem;
+  margin: 0 auto;
+}
+
+.icons {
+  margin-top: auto;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+}
+
+.logo {
   padding: 1rem;
   border-radius: 50%;
   box-shadow: var(--shadowMd);
-  cursor: pointer;
+  background-color: var(--color04);
+}
+
+.sidebar:hover > .btn > img {
+  display: none;
 }
 
 .links {

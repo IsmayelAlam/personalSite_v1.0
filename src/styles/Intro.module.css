@@ -1,8 +1,13 @@
-.Intro {
+.intro {
   width: 80vw;
-  height: 100vh;
+  max-width: 100%;
+  height: fit-content;
+  min-height: 100vh;
+  max-width: 100%;
+
   margin: 0 auto;
   color: var(--color05);
+  font-size: 1.6rem;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -16,14 +21,24 @@
 .header {
   font-size: 9.6rem;
   color: var(--color01);
+  white-space: nowrap;
 }
 
 .description {
-  width: 80%;
+  width: 100%;
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
 }
 
 .btn {
-  display: inline-block;
+  display: flex;
+  width: max-content;
+  gap: 1rem;
+  align-items: center;
+
   padding: 1rem 2rem;
   border: none;
   border-radius: 5rem;
@@ -31,17 +46,90 @@
   cursor: pointer;
   color: var(--color03);
   font-weight: 500;
-  box-shadow: 1px 5px 1rem rgba(0, 0, 0, 0.2);
   text-decoration: none;
   margin: 2rem 0;
+  transition: all 200ms;
+  box-shadow: var(--shadowSm);
 }
 .btn:last-child {
-  margin-left: 2rem;
   background-color: var(--color02);
+}
+
+.btn:hover {
+  box-shadow: var(--shadowMd);
+  gap: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .heroImage {
   justify-self: center;
   width: 70rem;
   height: 70rem;
+}
+
+@media screen and (max-width: 110em) {
+  .intro {
+    width: 100%;
+    padding: 10rem;
+  }
+  .heroImage {
+    width: 60rem;
+    height: 60rem;
+  }
+}
+
+@media screen and (max-width: 90em) {
+  .intro {
+    padding: 2.5rem;
+  }
+  .heroImage {
+    width: 50rem;
+    height: auto;
+  }
+}
+@media screen and (max-width: 80em) {
+  .description {
+    font-size: 1.3rem;
+  }
+  .greet {
+    font-size: 2.4rem;
+  }
+  .header {
+    font-size: 6.8rem;
+  }
+}
+@media screen and (max-width: 60em) {
+  .intro {
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: 1fr;
+  }
+  .description {
+    text-align: center;
+  }
+  .links {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 40em) {
+  .description {
+    font-size: 1.2rem;
+  }
+  .greet {
+    font-size: 2rem;
+  }
+  .header {
+    font-size: 5.2rem;
+  }
+  .heroImage {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 20em) {
+  .header {
+    font-size: 4.2rem;
+  }
+  .heroImage {
+    display: none;
+  }
 }
