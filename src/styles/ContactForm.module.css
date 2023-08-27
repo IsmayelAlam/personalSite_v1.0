@@ -42,11 +42,9 @@
 .input::placeholder {
   color: var(--color01);
 }
+
 .input:valid {
-  border-bottom: 2px solid green;
-}
-.input:focus {
-  border-bottom: 2px solid orangered;
+  border-bottom: 2px solid rgb(15, 150, 15);
 }
 
 .btn {

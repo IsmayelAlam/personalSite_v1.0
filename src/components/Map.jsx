@@ -47,11 +47,12 @@ export default function Map() {
           }}
         >
           <text
-            x="35"
-            textAnchor="end"
-            fontSize={12}
-            alignmentBaseline="middle"
-            fill="#ee6c4d"
+            style={{
+              fontSize: "1.6rem",
+              fill: "var(--color04)",
+              "text-anchor": "start",
+              "alignment-baseline": "middle",
+            }}
           >
             Hello!
           </text>

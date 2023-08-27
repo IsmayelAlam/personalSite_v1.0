@@ -1,9 +1,26 @@
+import React from "react";
+import { BiHomeAlt2 } from "react-icons/bi";
+import { BsCodeSlash, BsInfoCircle } from "react-icons/bs";
+import { LuContact } from "react-icons/lu";
+
 export const navigation = [
-  // { title: "home", link: "#" },
+  {
+    title: "home",
+    link: "#",
+    icon: React.createElement(BiHomeAlt2),
+  },
   // { title: "skills", link: "#skills" },
-  { title: "projects", link: "#projects" },
-  { title: "about", link: "#about" },
-  { title: "contact", link: "#contact" },
+  {
+    title: "projects",
+    link: "#projects",
+    icon: React.createElement(BsCodeSlash),
+  },
+  { title: "about", link: "#about", icon: React.createElement(BsInfoCircle) },
+  {
+    title: "contact",
+    link: "#contact",
+    icon: React.createElement(LuContact),
+  },
 ];
 
 export const skills = [

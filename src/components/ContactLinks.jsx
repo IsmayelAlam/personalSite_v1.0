@@ -1,8 +1,8 @@
-import { BsGithub, BsLinkedin, BsSend } from "react-icons/bs";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { CiLocationOn } from "react-icons/ci";
 import { IoCallOutline, IoMailOutline } from "react-icons/io5";
 
-import style from "../styles/Contact.module.css";
+import style from "../styles/ContactLinks.module.css";
 
 export default function ContactLinks() {
   return (
