@@ -55,7 +55,6 @@
   padding: 2.5rem 0;
   list-style: none;
   font-size: 3.2rem;
-  gap: 2rem;
   cursor: pointer;
   text-transform: uppercase;
   text-decoration: none;
@@ -69,16 +68,17 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 
   perspective: 100rem;
   transform-style: preserve-3d;
 
-  transform: rotate3d(0, 1, 0, -25deg);
+  transform: rotate3d(0, 1, 0, -45deg);
   transform-origin: 100%;
 
   transition: all 0.5s;
 }
+
 .link:hover {
   transform: rotate3d(0, 1, 0, 0deg);
   text-shadow: var(--shadowSm);
@@ -94,6 +94,9 @@
 @media screen and (max-width: 40em) {
   .icons {
     margin-bottom: 4rem;
+  }
+  .links > * {
+    margin: 1.5rem 0;
   }
   .link > span {
     display: none;

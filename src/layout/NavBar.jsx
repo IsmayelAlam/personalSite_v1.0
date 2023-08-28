@@ -15,7 +15,7 @@ export default function NavBar() {
         <Image src={logo} alt="logo" width={50} height={50} />
         <ul className={`${style.links} ${nunito.className}`}>
           {navigation.map((link) => (
-            <li key={link.title} className={style.link}>
+            <li key={link.title}>
               <a href={link.link} className={style.link}>
                 <span>{link.title}</span>
                 {link.icon}
