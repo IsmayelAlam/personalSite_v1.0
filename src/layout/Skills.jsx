@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Skills() {
   return (
     <section id="skills" className={style.skills}>
-      <h3 className={style.heading}>some of my skills</h3>
+      <h2 className={style.heading}>some of my skills</h2>
       <div className={style.animation}>
         <ul className={style.list}>
           {skills.map((skill) => (
@@ -18,7 +18,7 @@ export default function Skills() {
                 width={100}
                 height={100}
               />
-              <h4>{skill.title}</h4>
+              <h3>{skill.title}</h3>
             </li>
           ))}
         </ul>
@@ -33,7 +33,7 @@ export default function Skills() {
                 width={100}
                 height={100}
               />
-              <h4>{skill.title}</h4>
+              <h3>{skill.title}</h3>
             </li>
           ))}
         </ul>

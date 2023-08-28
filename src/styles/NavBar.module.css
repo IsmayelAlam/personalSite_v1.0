@@ -44,10 +44,11 @@
   border-radius: 50%;
   box-shadow: var(--shadowMd);
   background-color: var(--color04);
+  transition: all 100ms;
 }
 
 .sidebar:hover > .btn > img {
-  display: none;
+  transform: scale(0);
 }
 
 .links {
@@ -60,26 +61,27 @@
   text-decoration: none;
   font-weight: 900;
   color: var(--color05);
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .link {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 1rem;
-  margin: 1rem 0;
+  gap: 2rem;
 
-  perspective: 200rem;
-  perspective-origin: 100%;
-  transform: rotateY(-40deg);
+  perspective: 100rem;
+  transform-style: preserve-3d;
+
+  transform: rotate3d(0, 1, 0, -25deg);
   transform-origin: 100%;
 
-  transition: all 550ms;
+  transition: all 0.5s;
 }
 .link:hover {
-  transform: rotateY(0deg);
+  transform: rotate3d(0, 1, 0, 0deg);
   text-shadow: var(--shadowSm);
-  transform-origin: 100%;
 }
 
 @media screen and (max-width: 80em) {
@@ -90,6 +92,9 @@
   }
 }
 @media screen and (max-width: 40em) {
+  .icons {
+    margin-bottom: 4rem;
+  }
   .link > span {
     display: none;
   }

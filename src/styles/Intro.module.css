@@ -56,13 +56,15 @@
   box-shadow: var(--shadowSm);
 }
 .btn:last-child {
-  background-color: var(--color02);
+  color: var(--color05);
+  background-color: transparent;
+  border: 0.25rem solid var(--color02);
 }
 
 .btn:hover {
-  box-shadow: var(--shadowMd);
-  gap: 1.5rem;
-  padding-right: 1.5rem;
+  box-shadow: var(--shadowLg);
+  gap: 1.75rem;
+  padding-right: 1.25rem;
 }
 
 @keyframes slideIn {

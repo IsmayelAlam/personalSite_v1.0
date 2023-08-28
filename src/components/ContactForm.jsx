@@ -4,7 +4,7 @@ import style from "../styles/ContactForm.module.css";
 export default function ContactForm() {
   return (
     <form className={style.form}>
-      <h4 className={style.heading}>get in touch</h4>
+      <h2 className={style.heading}>get in touch</h2>
       <input type="text" required className={style.input} placeholder="Name" />
       <input
         type="email"
