@@ -10,7 +10,7 @@ const nunito = Nunito({ subsets: ["latin"], weight: ["500"] });
 export default function Intro() {
   return (
     <section className={style.intro}>
-      <div className={style.description}>
+      <div className={style.details}>
         <div className={nunito.className}>
           <p className={style.greet}>Hi! I&apos;m</p>
           <h1 className={style.header}>Ismayel Alam</h1>

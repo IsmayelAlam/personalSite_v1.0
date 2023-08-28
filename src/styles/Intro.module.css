@@ -16,19 +16,20 @@
 
 .greet {
   font-size: 4rem;
-  animation: slideIn 150ms ease-in 1;
+  line-height: 1;
+  animation: slideIn 200ms ease-in 1 25ms;
 }
 
 .header {
   font-size: 9.6rem;
   color: var(--color01);
   white-space: nowrap;
-  animation: slideIn 200ms ease-in 1 50ms;
+  animation: slideIn 250ms ease-in 1 50ms;
 }
 
 .description {
   width: 100%;
-  animation: slideIn 250ms ease-in 1 100ms;
+  animation: slideIn 350ms ease-in 1 100ms;
 }
 
 .links {
@@ -54,12 +55,12 @@
   margin: 2rem 0;
   transition: all 200ms;
   box-shadow: var(--shadowSm);
+  font-weight: 600;
 }
 .btn:last-child {
   color: var(--color05);
   background-color: transparent;
   border: 0.25rem solid var(--color02);
-  font-weight: 600;
 }
 
 .btn:hover {
@@ -113,7 +114,7 @@
     justify-items: center;
     margin: auto auto;
   }
-  .description {
+  .details {
     text-align: center;
     align-self: flex-end;
   }
@@ -122,6 +123,10 @@
   }
 }
 @media screen and (max-width: 40em) {
+  .details {
+    font-size: 1.4rem;
+    padding: 1rem;
+  }
   .description {
     font-size: 1.2rem;
   }
@@ -136,7 +141,9 @@
   .header {
     font-size: 4.2rem;
   }
-
+  .details {
+    align-self: center;
+  }
   .btn > span {
     display: none;
   }
