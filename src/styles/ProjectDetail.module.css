@@ -15,12 +15,12 @@
   flex-wrap: wrap;
 }
 .tech {
-  background-color: var(--color04);
-  color: var(--color03);
+  background-color: var(--color02);
   padding: 0.5rem 2rem;
   border-radius: 5rem;
   box-shadow: var(--shadowSM);
   width: max-content;
+  font-weight: 600;
 }
 
 .subHead {

@@ -49,10 +49,13 @@ export const skills = [
 export const projects = [
   {
     title: "texty",
-    description: "",
+    description:
+      "Texty has been an exciting journey, undoubtedly the most complex project I've ever tackled. While it's a work in progress and not without its imperfections, there's a lot to love. With Texty, you can effortlessly connect with others by searching for users, curating your friend list, and engaging in real-time, meaningful chats. Plus, we've got your back with user blocking functionality to ensure a positive experience.",
     tech: ["React", "React Router", "Sass", "Firebase", "Vercel"],
-    challenges: "",
-    outcome: "",
+    challenges:
+      "One of the most thrilling challenges I encountered during this project was the database implementation, but once I tackled that hurdle, everything started flowing smoothly. The tech stack I handpicked for this endeavor turned out to be a perfect match, working seamlessly together and contributing significantly to our speedy progress. It's been a fantastic journey, and I can't wait to keep building and improving to make Texty even better!",
+    outcome:
+      "After experimenting with various options, I settled on utilizing three separate datasets for this project. For the backend, I chose Firebase, and I have to say, setting it up was a breeze. It's been an incredible experience, and I'm thrilled with how well everything is coming together. We're making great strides, and I'm excited to continue improving and enhancing Texty!",
     image: "/texty.webp",
     live: "https://texty.ismayelalam.com/",
     code: "https://github.com/IsmayelAlam/demo_project-texty",
@@ -60,7 +63,7 @@ export const projects = [
   {
     title: "bookish",
     description:
-      "Imagine having all your favorite books in one cozy spot. With this app, you can do it all - read your treasured tales online or snag a paperback copy from Amazon. Plus, you can bookmark your reading adventures for later.And guess what? You can explore your favorite authors too! This website is super clever with its dynamic links. If you share a link with your buddies, it'll always lead them to the exact same page. Pretty neat, right? Hope you adore it as much as I do. Happy reading! 📚",
+      "Imagine having all your favorite books in one cozy spot. With this app, you can do it all - read your treasured tales online or snag a paperback copy from Amazon. Plus, you can bookmark your reading adventures for later.And guess what? You can explore your favorite authors too! This website is super clever with its dynamic links. If you share a link with your buddies, it'll always lead them to the exact same page. Pretty neat, right? Hope you adore it as much as I do. Happy reading! ",
     tech: ["React", "React Query", "React Router", "TailwindCSS", "Vercel"],
     challenges:
       "One of the most interesting challenges I tackled with this app was managing all that data. The free API have got a massive collection, with over 30 million books and documents, with varies amount of details available for each to query. Some may not have those snazzy cover images, and others might not be available for online reading.",
@@ -72,10 +75,13 @@ export const projects = [
   },
   {
     title: "work board",
-    description: "",
+    description:
+      "In today's fast-paced world, maintaining concentration can be quite challenging. To combat this, I've devised a workboard that assists me in managing day-to-day tasks and maintaining a well-structured workflow. It bears a striking resemblance to Trello, encompassing many of its features while also incorporating some personalized enhancements. This endeavor has been an enjoyable project, one that has imparted valuable lessons along the way.",
     tech: ["React", "Redux", "TailwindCSS", "Vercel"],
-    challenges: "",
-    outcome: "",
+    challenges:
+      "Embarking on my inaugural major project, I've since reflected on my choice of tech stack. In hindsight, I might have opted for a different approach, considering that handling data and managing their interactions presented formidable challenges at the time. The sheer volume of information to process forced me to make some tough decisions, leading to the removal of certain features. It's worth noting that there's no backend involved; instead, everything is stored locally. As I've gained more experience, it's become evident that there's ample room for enhancement in this project as well.",
+    outcome:
+      "Undoubtedly, there's an immense amount of knowledge to gain, and as time progresses, I'm confident that tasks will become more manageable. This entire experience has been nothing short of amazing, and I've absorbed a wealth of insights from it. As I wrapped up this project, I witnessed a cascade of revelations, solidifying my belief in my capacity to tackle intricate challenges and continually grow through the process.",
     image: "/workboard.webp",
     live: "https://workBoard.ismayelalam.com/",
     code: "https://github.com/IsmayelAlam/demo_project-workBoard",
