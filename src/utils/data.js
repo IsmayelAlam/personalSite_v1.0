@@ -48,6 +48,16 @@ export const skills = [
 
 export const projects = [
   {
+    title: "texty",
+    description: "",
+    tech: ["react", "react router", "Sass", "Firebase", "vercel"],
+    challenges: "",
+    overcome: "",
+    image: "/texty.webp",
+    live: "https://texty.ismayelalam.com/",
+    code: "https://github.com/IsmayelAlam/demo_project-texty",
+  },
+  {
     title: "bookish",
     description:
       "Imagine having all your favorite books in one cozy spot. With this app, you can do it all - read your treasured tales online or snag a paperback copy from Amazon. Plus, you can bookmark your reading adventures for later.And guess what? You can explore your favorite authors too! This website is super clever with its dynamic links. If you share a link with your buddies, it'll always lead them to the exact same page. Pretty neat, right? Hope you adore it as much as I do. Happy reading! 📚",
@@ -57,5 +67,17 @@ export const projects = [
     overcome:
       "Getting all the data to play nicely together was no small feat! Let me tell you, it took a whole bunch of tireless hours. After a ton of trial and error, I managed to build a system that not only showcases the common data but also handles errors like a pro. We've got plenty of safety nets in place and some clever constraints to ensure your user experience is as smooth as a warm cup of cocoa on a chilly day. ",
     image: "/bookish.webp",
+    live: "https://bookish.ismayelalam.com/",
+    code: "https://github.com/IsmayelAlam/demo_project-bookish",
+  },
+  {
+    title: "work board",
+    description: "",
+    tech: ["react", "redux", "tailwindcss", "vercel"],
+    challenges: "",
+    overcome: "",
+    image: "/workboard.webp",
+    live: "https://workBoard.ismayelalam.com/",
+    code: "https://github.com/IsmayelAlam/demo_project-workBoard",
   },
 ];

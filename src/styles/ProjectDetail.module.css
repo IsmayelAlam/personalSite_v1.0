@@ -1,0 +1,22 @@
+.details > * {
+  margin: 2.5rem 0;
+}
+
+.heading {
+  color: var(--color05);
+  font-size: 3.2rem;
+  text-transform: capitalize;
+}
+
+.subHead {
+  font-size: 1.8rem;
+  text-transform: capitalize;
+}
+
+.extra {
+  display: flex;
+  gap: 2rem;
+}
+.extra > * {
+  flex-shrink: 1;
+}

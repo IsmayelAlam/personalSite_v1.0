@@ -1,0 +1,48 @@
+.imageLink {
+  background-color: var(--color02);
+  /* padding: 5rem 2rem; */
+  border-radius: 1rem;
+  box-shadow: var(--shadowSm);
+  overflow: hidden;
+  width: max-content;
+  flex-shrink: 0;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.btn {
+  display: flex;
+  width: max-content;
+  gap: 1rem;
+  align-items: center;
+
+  padding: 1rem 2rem;
+  margin: 1rem;
+  border-radius: 5rem;
+  font-weight: 500;
+  transition: all 200ms;
+  text-transform: capitalize;
+
+  background-color: var(--color04);
+  color: var(--color03);
+  box-shadow: var(--shadowSm);
+}
+.btn:last-child {
+  gap: 0.5rem;
+  background-color: transparent;
+  box-shadow: none;
+  color: var(--color05);
+}
+
+.btn:first-child:hover {
+  gap: 1.75rem;
+  padding-right: 1.25rem;
+}
