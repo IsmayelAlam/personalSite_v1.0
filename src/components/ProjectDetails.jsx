@@ -4,7 +4,6 @@ export default function ProjectDetails({ project }) {
   return (
     <div className={style.details}>
       <h3 className={style.heading}>{project.title}</h3>
-      <p className={style.description}>{project.description}</p>
 
       <div className={style.techs}>
         {project.tech.map((t) => (
@@ -13,6 +12,8 @@ export default function ProjectDetails({ project }) {
           </p>
         ))}
       </div>
+
+      <p className={style.description}>{project.description}</p>
 
       <div className={style.extras}>
         <div className={style.extra}>

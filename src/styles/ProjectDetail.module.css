@@ -2,10 +2,11 @@
   color: var(--color05);
   font-size: 3.2rem;
   text-transform: capitalize;
+  margin-bottom: 2rem;
 }
 
 .description {
-  margin: 2rem 0;
+  margin-top: 2rem;
   text-align: justify;
 }
 
@@ -31,10 +32,29 @@
 
 .extras {
   display: flex;
-  gap: 5rem;
+  gap: 2.5rem;
 }
 .extra {
   width: 50%;
   flex: 1;
   text-align: justify;
+}
+
+@media screen and (max-width: 90em) {
+  .extras {
+    gap: 2rem;
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 40em) {
+  .extras {
+    display: none;
+  }
+  .heading {
+    font-size: 2.8rem;
+  }
+  .tech {
+    padding: 0.5rem 2rem;
+    font-weight: 400;
+  }
 }
