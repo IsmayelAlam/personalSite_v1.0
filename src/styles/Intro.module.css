@@ -59,6 +59,7 @@
   color: var(--color05);
   background-color: transparent;
   border: 0.25rem solid var(--color02);
+  font-weight: 600;
 }
 
 .btn:hover {

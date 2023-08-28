@@ -14,7 +14,6 @@
 
 .links {
   display: flex;
-  gap: 1rem;
   justify-content: space-between;
 }
 
@@ -25,7 +24,7 @@
   align-items: center;
 
   padding: 1rem 2rem;
-  margin: 1rem;
+  margin: 2rem 1rem;
   border-radius: 5rem;
   font-weight: 500;
   transition: all 200ms;

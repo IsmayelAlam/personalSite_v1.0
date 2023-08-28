@@ -1,22 +1,40 @@
-.details > * {
-  margin: 2.5rem 0;
-}
-
 .heading {
   color: var(--color05);
   font-size: 3.2rem;
   text-transform: capitalize;
 }
 
+.description {
+  margin: 2rem 0;
+  text-align: justify;
+}
+
+.techs {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.tech {
+  background-color: var(--color04);
+  color: var(--color03);
+  padding: 0.5rem 2rem;
+  border-radius: 5rem;
+  box-shadow: var(--shadowSM);
+  width: max-content;
+}
+
 .subHead {
   font-size: 1.8rem;
   text-transform: capitalize;
+  margin: 2rem 0 1rem;
 }
 
-.extra {
+.extras {
   display: flex;
-  gap: 2rem;
+  gap: 5rem;
 }
-.extra > * {
-  flex-shrink: 1;
+.extra {
+  width: 50%;
+  flex: 1;
+  text-align: justify;
 }

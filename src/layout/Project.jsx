@@ -6,6 +6,7 @@ import ProjectDetails from "@/components/ProjectDetails";
 export default function Project() {
   return (
     <section className={style.projects} id="projects">
+      <h2 className={style.heading}>recent works</h2>
       {projects.map((project, i) => (
         <div key={i} className={style.details}>
           <ProjectImageLink project={project} />
