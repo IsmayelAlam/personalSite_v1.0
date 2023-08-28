@@ -115,6 +115,7 @@
   }
   .description {
     text-align: center;
+    align-self: flex-end;
   }
   .links {
     justify-content: center;
