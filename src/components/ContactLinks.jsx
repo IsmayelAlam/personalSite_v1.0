@@ -9,7 +9,7 @@ export default function ContactLinks() {
     <div className={style.links}>
       <p className={style.link}>
         <CiLocationOn className={style.icons} />
-        <span> Narayanganj, Bangladesh</span>
+        <span> Dhaka, Bangladesh</span>
       </p>
       <a className={style.link} href="mailto:Ismayelalam0@gmail.com">
         <IoMailOutline className={style.icons} />

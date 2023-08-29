@@ -14,9 +14,13 @@ export default function ContactForm() {
     <form
       className={style.form}
       action={async (data) => {
-        const { res, error } = await sendEmail(data);
-        error ? toast.error(error) : toast.success("Message sent!");
-        ref.current.reset();
+        try {
+          const { res, error } = await sendEmail(data);
+          error ? toast.error(error) : toast.success("Message sent!");
+          ref.current.reset();
+        } catch (error) {
+          toast.error("something went wrong");
+        }
       }}
       ref={ref}
     >

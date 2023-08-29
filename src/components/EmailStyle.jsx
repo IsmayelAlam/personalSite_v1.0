@@ -27,8 +27,8 @@ export default function EmailStyle({ name, email, message }) {
           />
 
           <Text style={title}>
-            <strong style={sender}>{name}</strong> ({email}), send a message by
-            you portfolio site contact from.
+            <strong style={sender}>{name}</strong>, send a message by your
+            portfolio site contact from.
           </Text>
 
           <Section style={section}>{message}</Section>
