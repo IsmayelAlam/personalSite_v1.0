@@ -1,54 +1,50 @@
 import {
   Body,
-  Button,
   Container,
   Head,
   Html,
   Img,
-  Link,
   Preview,
   Section,
   Text,
 } from "@react-email/components";
 import * as React from "react";
-import logo from "../assets/logo.svg";
+import logo from "../assets/logoLight.svg";
 
-console.log(logo.src);
+export default function Notification({ name, email, message }) {
+  return (
+    <Html>
+      <Head />
+      <Preview>{name} send a message</Preview>
+      <Body style={main}>
+        <Container style={container}>
+          <Img
+            src={logo.src}
+            width="50"
+            height="50"
+            alt="logo"
+            style={logoStyle}
+          />
 
-export const GithubAccessTokenEmail = ({ username, email, message }) => (
-  <Html>
-    <Head />
-    <Preview>{username} send a message from portfolio site.</Preview>
-    <Body style={main}>
-      <Container style={container}>
-        <Img
-          src={logo.src}
-          width="50"
-          height="50"
-          alt="logo"
-          style={logoStyle}
-        />
+          <Text style={title}>
+            <strong style={sender}>{name}</strong> ({email}), send a message by
+            you portfolio site contact from.
+          </Text>
 
-        <Text style={title}>
-          <strong style={sender}>{username}</strong> ({email}), send a message
-          by you portfolio site contact from.
-        </Text>
+          <Section style={section}>{message}</Section>
 
-        <Section style={section}>{message}</Section>
-
-        <a style={button} href={`mailto:${email}`}>
-          Reply to {username}
-        </a>
-      </Container>
-    </Body>
-  </Html>
-);
-
-export default GithubAccessTokenEmail;
+          <a style={button} href={`mailto:${email}`}>
+            Reply to {name}
+          </a>
+        </Container>
+      </Body>
+    </Html>
+  );
+}
 
 const main = {
-  backgroundColor: "#ffffff",
-  color: "#24292e",
+  backgroundColor: "#293241",
+  color: "#e0fbfc",
   fontFamily:
     '-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"',
 };
@@ -77,8 +73,9 @@ const sender = {
 const section = {
   padding: "24px",
   fontSize: "18px",
-  border: "solid 1px #dedede",
+  border: "solid 2px #98c1d9",
   borderRadius: "5px",
+  color: "#fff",
 };
 
 const button = {
@@ -88,7 +85,7 @@ const button = {
   fontSize: "16px",
   backgroundColor: "#ee6c4d",
   color: "#fff",
-  lineHeight: 1.5,
+  lineHeight: 1,
   borderRadius: "0.5em",
   padding: "0.75em 1.5em",
   cursor: "pointer",

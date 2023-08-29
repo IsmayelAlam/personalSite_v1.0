@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { Nunito } from "next/font/google";
 
-import { navigation } from "../utils/data";
-import style from "../styles/NavBar.module.css";
+import { navigation } from "@/utils/data";
+import style from "@/styles/NavBar.module.css";
 import logo from "@/assets/logo.svg";
 import { BsFillSunFill } from "react-icons/bs";
 

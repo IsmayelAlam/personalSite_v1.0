@@ -1,16 +1,24 @@
 "use client";
 
 import { BsSend } from "react-icons/bs";
+import { useRef } from "react";
+
 import style from "../styles/ContactForm.module.css";
+import { sendEmail } from "@/action/sendEmail";
 
 export default function ContactForm() {
-  const handleSubmit = (data) => {
-    console.log(data.get("name"));
-    console.log(data.get("email"));
-    console.log(data.get("message"));
-  };
+  const ref = useRef();
+
   return (
-    <form className={style.form}>
+    <form
+      className={style.form}
+      action={async (data) => {
+        const { res, error } = await sendEmail(data);
+        console.log(res, error);
+        ref.current.reset();
+      }}
+      ref={ref}
+    >
       <h2 className={style.heading}>get in touch</h2>
       <input
         type="text"
