@@ -11,7 +11,7 @@ import {
 import * as React from "react";
 import logo from "../assets/logoLight.svg";
 
-export default function Notification({ name, email, message }) {
+export default function EmailStyle({ name, email, message }) {
   return (
     <Html>
       <Head />

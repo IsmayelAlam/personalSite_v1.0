@@ -1,6 +1,6 @@
 "use server";
 
-import Notification from "@/components/Notification";
+import EmailStyle from "@/components/EmailStyle";
 import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
@@ -21,7 +21,7 @@ export async function sendEmail(data) {
       to: "ismayelalam0@gmail.com",
       subject: "Notification",
       reply_to: email,
-      react: Notification({ name, email, message }),
+      react: EmailStyle({ name, email, message }),
     });
 
     if (res?.message || res?.name || res?.statusCode)
