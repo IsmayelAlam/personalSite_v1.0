@@ -70,6 +70,20 @@
   gap: 3rem;
 }
 
+.loading {
+  animation: span 2.5s linear infinite;
+  cursor: not-allowed;
+}
+
+@keyframes span {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
 @media screen and (max-width: 112em) {
   .form {
     margin: 0 15rem;

@@ -1,10 +1,11 @@
 "use client";
 
-import { BsSend } from "react-icons/bs";
 import { useRef } from "react";
+import { toast } from "react-hot-toast";
 
-import style from "../styles/ContactForm.module.css";
 import { sendEmail } from "@/action/sendEmail";
+import style from "../styles/ContactForm.module.css";
+import Button from "./Button";
 
 export default function ContactForm() {
   const ref = useRef();
@@ -14,7 +15,7 @@ export default function ContactForm() {
       className={style.form}
       action={async (data) => {
         const { res, error } = await sendEmail(data);
-        console.log(res, error);
+        error ? toast.error(error) : toast.success("Message sent!");
         ref.current.reset();
       }}
       ref={ref}
@@ -42,10 +43,7 @@ export default function ContactForm() {
         placeholder="Message"
         required
       ></textarea>
-      <button type="submit" className={style.btn}>
-        <span>send</span>
-        <BsSend />
-      </button>
+      <Button btnStyle={style} />
     </form>
   );
 }

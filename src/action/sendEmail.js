@@ -11,8 +11,6 @@ export async function sendEmail(data) {
   const email = data.get("email");
   const message = data.get("message");
 
-  console.log(name, email, message);
-
   if (!name || typeof name !== "string") return { error: "Invalid name" };
   if (!email || typeof name !== "string") return { error: "Invalid email" };
   if (!message || typeof name !== "string") return { error: "Invalid message" };
@@ -26,7 +24,12 @@ export async function sendEmail(data) {
       reply_to: email,
       react: Notification({ name, email, message }),
     });
-    console.log(res);
+
+    if (res?.message || res?.name || res?.statusCode)
+      return {
+        error: "something went wrong",
+        res,
+      };
   } catch (error) {
     return { error: "something went wrong" };
   }
