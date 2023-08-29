@@ -3,7 +3,10 @@ import { Nunito } from "next/font/google";
 import style from "../styles/Intro.module.css";
 import { BsDownload } from "react-icons/bs";
 import { BiSend } from "react-icons/bi";
-import Artwork from "@/components/Artwork";
+// import Artwork from "@/components/Artwork";
+import { Suspense, lazy } from "react";
+
+const Artwork = lazy(() => import("@/components/Artwork"));
 
 const nunito = Nunito({ subsets: ["latin"], weight: ["500"] });
 
@@ -32,7 +35,9 @@ export default function Intro() {
           </a>
         </div>
       </div>
-      <Artwork />
+      <Suspense>
+        <Artwork />
+      </Suspense>
     </section>
   );
 }
