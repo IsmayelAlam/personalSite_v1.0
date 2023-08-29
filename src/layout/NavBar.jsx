@@ -3,7 +3,7 @@ import { Nunito } from "next/font/google";
 
 import { navigation } from "@/utils/data";
 import style from "@/styles/NavBar.module.css";
-import logo from "@/assets/logo.svg";
+import logo from "@/assets/logoDark.svg";
 import { BsFillSunFill } from "react-icons/bs";
 
 const nunito = Nunito({ subsets: ["latin"], weight: ["900", "600"] });

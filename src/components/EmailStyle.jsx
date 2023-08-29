@@ -9,7 +9,6 @@ import {
   Text,
 } from "@react-email/components";
 import * as React from "react";
-import logo from "../assets/logoLight.svg";
 
 export default function EmailStyle({ name, email, message }) {
   return (
@@ -19,7 +18,7 @@ export default function EmailStyle({ name, email, message }) {
       <Body style={main}>
         <Container style={container}>
           <Img
-            src={logo.src}
+            src="/logo.svg"
             width="50"
             height="50"
             alt="logo"
