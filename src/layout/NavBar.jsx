@@ -16,7 +16,11 @@ export default function NavBar() {
         <ul className={`${style.links} ${nunito.className}`}>
           {navigation.map((link) => (
             <li key={link.title}>
-              <a href={link.link} className={style.link}>
+              <a
+                href={link.link}
+                className={style.link}
+                aria-label={`go to ${link.link} section`}
+              >
                 <span>{link.title}</span>
                 {link.icon}
               </a>

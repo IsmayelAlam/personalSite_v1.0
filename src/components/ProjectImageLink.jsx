@@ -14,11 +14,23 @@ export default function ProjectImageLink({ project }) {
         className={style.image}
       />
       <div className={style.links}>
-        <a className={style.btn} href={project.live} target="_blank">
+        <a
+          className={style.btn}
+          href={project.live}
+          target="_blank"
+          rel="noopener"
+          aria-label="live preview"
+        >
           <span>live preview</span>
           <FiExternalLink />
         </a>
-        <a className={style.btn} href={project.code} target="_blank">
+        <a
+          className={style.btn}
+          href={project.code}
+          target="_blank"
+          rel="noopener"
+          aria-label="codebase"
+        >
           <span>codebase</span>
           <FiGithub />
         </a>

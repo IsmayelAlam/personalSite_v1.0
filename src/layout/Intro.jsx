@@ -25,11 +25,16 @@ export default function Intro() {
           user-friendly websites.
         </p>
         <div className={style.links}>
-          <a className={style.btn} href="#contact">
+          <a className={style.btn} href="#contact" aria-label="contact form">
             <span>Get in touch</span>
             <BiSend />
           </a>
-          <a className={style.btn} href="/ismayel_alam_resume.pdf" download>
+          <a
+            className={style.btn}
+            href="/ismayel_alam_resume.pdf"
+            download
+            aria-label="download resume"
+          >
             <span>Download CV</span>
             <BsDownload />
           </a>

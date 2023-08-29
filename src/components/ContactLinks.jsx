@@ -11,11 +11,21 @@ export default function ContactLinks() {
         <CiLocationOn className={style.icons} />
         <span> Dhaka, Bangladesh</span>
       </p>
-      <a className={style.link} href="mailto:Ismayelalam0@gmail.com">
+      <a
+        className={style.link}
+        aria-label="contact by email"
+        href="mailto:Ismayelalam0@gmail.com"
+        rel="noopener"
+      >
         <IoMailOutline className={style.icons} />
         <span> Ismayelalam0@gmail.com</span>
       </a>
-      <a className={style.link} href="tel:(+880) 1626 256336">
+      <a
+        className={style.link}
+        aria-label="contact by phone"
+        href="tel:(+880) 1626 256336"
+        rel="noopener"
+      >
         <IoCallOutline className={style.icons} />
         <span>(+880) 1626 256336</span>
       </a>
@@ -23,6 +33,8 @@ export default function ContactLinks() {
         href="https://github.com/IsmayelAlam"
         target="_blank"
         className={style.link}
+        aria-label="contact through github"
+        rel="noopener"
       >
         <BsGithub className={style.icons} />
         <span href="tel:(+880) 1626 256336">github</span>
@@ -31,6 +43,8 @@ export default function ContactLinks() {
         href="https://www.linkedin.com/in/ismayelalam/"
         target="_blank"
         className={style.link}
+        aria-label="contact through Linkedin"
+        rel="noopener"
       >
         <BsLinkedin className={style.icons} />
         <span>Linkedin</span>
