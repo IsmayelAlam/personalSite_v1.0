@@ -13,7 +13,6 @@ export default function Skills() {
               <Image
                 src={skill.logo}
                 alt=""
-                srcset=""
                 className={style.img}
                 width={100}
                 height={100}
@@ -28,7 +27,6 @@ export default function Skills() {
               <Image
                 src={skill.logo}
                 alt=""
-                srcset=""
                 className={style.img}
                 width={100}
                 height={100}
