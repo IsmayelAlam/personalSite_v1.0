@@ -1,9 +1,9 @@
 import { Nunito } from "next/font/google";
-import { BsFillSunFill } from "react-icons/bs";
 
 import { navigation } from "@/utils/data";
 import style from "@/styles/NavBar.module.css";
 import Logo from "@/components/Logo";
+import ToggleMode from "@/components/ModeToggle";
 
 const nunito = Nunito({ subsets: ["latin"], weight: ["900", "600"] });
 
@@ -29,7 +29,7 @@ export default function NavBar() {
         <div className={style.btn}>
           <Logo btnStyle={style.logo} />
         </div>
-        <BsFillSunFill className={style.icons} />
+        <ToggleMode />
       </nav>
     </header>
   );

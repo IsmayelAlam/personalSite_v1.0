@@ -50,8 +50,8 @@ export default function Map() {
             style={{
               fontSize: "1.6rem",
               fill: "var(--accent01)",
-              "text-anchor": "start",
-              "alignment-baseline": "middle",
+              textAnchor: "start",
+              alignmentBaseline: "middle",
             }}
           >
             Hello!

@@ -37,6 +37,7 @@
   z-index: 0;
   border: none;
   outline: none;
+  user-select: none;
 }
 
 html {

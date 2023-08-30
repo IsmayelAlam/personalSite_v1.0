@@ -1,0 +1,40 @@
+.mode {
+  width: 8rem;
+  border: 2px solid var(--accent01);
+  box-shadow: var(--shadowSm);
+  padding: 0.5rem 1rem;
+  border-radius: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: fixed;
+  bottom: 5rem;
+}
+
+.icon {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  color: var(--text03);
+}
+
+.block {
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: var(--accent01);
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 200ms;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 40em) {
+  .mode {
+    transform: rotateZ(90deg);
+  }
+  .icon {
+    transform: rotateZ(-90deg);
+  }
+}
