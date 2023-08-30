@@ -22,7 +22,7 @@ export default function Intro() {
           user-friendly websites.
         </p>
         <div className={style.links}>
-          <a className={style.btn} href="#contact" aria-label="contact form">
+          <a className={style.btn} href="#contact" aria-label="Get in touch">
             <span>Get in touch</span>
             <BiSend />
           </a>
@@ -30,7 +30,7 @@ export default function Intro() {
             className={style.btn}
             href="/ismayel_alam_resume.pdf"
             download
-            aria-label="download resume"
+            aria-label="download CV"
           >
             <span>Download CV</span>
             <BsDownload />

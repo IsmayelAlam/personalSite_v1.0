@@ -17,11 +17,11 @@ export default function ProjectDetails({ project }) {
 
       <div className={style.extras}>
         <div className={style.extra}>
-          <h4 className={style.subHead}>Challenges</h4>
+          <h3 className={style.subHead}>Challenges</h3>
           <p>{project.challenges}</p>
         </div>
         <div className={style.extra}>
-          <h4 className={style.subHead}>Outcome</h4>
+          <h3 className={style.subHead}>Outcome</h3>
           <p>{project.outcome}</p>
         </div>
       </div>

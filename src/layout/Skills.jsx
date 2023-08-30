@@ -17,7 +17,7 @@ export default function Skills() {
                 width={100}
                 height={100}
               />
-              <h3>{skill.title}</h3>
+              <p>{skill.title}</p>
             </li>
           ))}
         </ul>
@@ -31,7 +31,7 @@ export default function Skills() {
                 width={100}
                 height={100}
               />
-              <h3>{skill.title}</h3>
+              <p>{skill.title}</p>
             </li>
           ))}
         </ul>
