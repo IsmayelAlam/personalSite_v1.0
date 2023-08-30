@@ -29,7 +29,7 @@ export default function ProjectImageLink({ project }) {
           href={project.code}
           target="_blank"
           rel="noopener"
-          aria-label={`full source code of ${project.title} demo project`}
+          aria-label="codebase"
         >
           <span>codebase</span>
           <FiGithub />

@@ -18,7 +18,7 @@ export default function NavBar() {
               <a
                 href={link.link}
                 className={style.link}
-                aria-label={`go to ${link.link} section`}
+                aria-label={link.title}
               >
                 <span>{link.title}</span>
                 {link.icon}

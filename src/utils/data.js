@@ -6,7 +6,7 @@ import { LuContact } from "react-icons/lu";
 export const navigation = [
   {
     title: "home",
-    link: "#",
+    link: "#home",
     icon: React.createElement(BiHomeAlt2),
   },
   {

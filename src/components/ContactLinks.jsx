@@ -13,7 +13,7 @@ export default function ContactLinks() {
       </p>
       <a
         className={style.link}
-        aria-label="contact by email"
+        aria-label="Ismayelalam0@gmail.com"
         href="mailto:Ismayelalam0@gmail.com"
         rel="noopener"
       >
@@ -22,7 +22,7 @@ export default function ContactLinks() {
       </a>
       <a
         className={style.link}
-        aria-label="contact by phone"
+        aria-label="(+880) 1626 256336"
         href="tel:(+880) 1626 256336"
         rel="noopener"
       >
