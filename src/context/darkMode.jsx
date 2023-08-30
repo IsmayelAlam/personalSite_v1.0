@@ -1,5 +1,6 @@
 "use client";
 
+import useLocalStorage from "@/hooks/useLocalStorage";
 import { createContext, useContext, useEffect, useState } from "react";
 
 const DarkModeContext = createContext();
@@ -7,9 +8,15 @@ const DarkModeContext = createContext();
 const curMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
 function DarkModeProvider({ children }) {
-  const [darkMode, setDarkMode] = useState(curMode);
+  const [saveMade, setSaveMode] = useLocalStorage("mode");
+  const [darkMode, setDarkMode] = useState(
+    saveMade ? saveMade : saveMade && curMode
+  );
 
-  const toggleDarkMode = () => setDarkMode((isDark) => !isDark);
+  const toggleDarkMode = () => {
+    setDarkMode((isDark) => !isDark);
+    setSaveMode((isDark) => !isDark);
+  };
 
   useEffect(() => {
     if (darkMode) {
