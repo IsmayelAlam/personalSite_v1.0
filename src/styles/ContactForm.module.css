@@ -10,7 +10,7 @@
   margin: 0 25rem;
   padding: 7.5rem 0;
 
-  background-color: var(--color02);
+  background-color: var(--bg02);
   box-shadow: var(--shadowMd);
 
   border-radius: 2rem;
@@ -23,7 +23,7 @@
   text-align: start;
   padding: 2rem 4rem;
   text-transform: capitalize;
-  color: var(--color03);
+  color: var(--text04);
   font-weight: 400;
 }
 
@@ -32,15 +32,17 @@
   margin: 0 auto;
   background-color: transparent;
   border: none;
-  border-bottom: 2px solid var(--color04);
+  border-bottom: 2px solid var(--accent01);
   padding: 1rem;
   outline: none;
   font-size: 1.6rem;
   resize: none;
+  color: var(--text02);
 }
 
 .input::placeholder {
-  color: var(--color01);
+  color: var(--text02);
+  opacity: 0.75;
 }
 
 .input:valid {
@@ -115,7 +117,7 @@
     box-shadow: none;
   }
   .heading {
-    color: var(--color05);
+    color: var(--text01);
   }
 }
 
@@ -128,7 +130,7 @@
   }
   .heading {
     padding: 1rem;
-    color: var(--color05);
+    color: var(--text01);
   }
 }
 
@@ -142,6 +144,6 @@
     box-shadow: none;
   }
   .heading {
-    color: var(--color05);
+    color: var(--text01);
   }
 }

@@ -1,5 +1,5 @@
 .heading {
-  color: var(--color05);
+  color: var(--text01);
   font-size: 3.2rem;
   text-transform: capitalize;
   margin-bottom: 2rem;
@@ -16,12 +16,13 @@
   flex-wrap: wrap;
 }
 .tech {
-  background-color: var(--color02);
+  background-color: var(--bg02);
   padding: 0.5rem 2rem;
   border-radius: 5rem;
   box-shadow: var(--shadowSM);
   width: max-content;
   font-weight: 600;
+  color: var(--text01);
 }
 
 .subHead {

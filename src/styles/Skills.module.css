@@ -2,7 +2,7 @@
   width: 100%;
   margin: 2.5rem auto;
   padding: 2rem 0;
-  background-color: var(--color02);
+  background-color: var(--bg02);
   box-shadow: var(--shadowSm);
 }
 
@@ -14,7 +14,7 @@
 .heading {
   font-weight: 500;
   font-size: 3.2rem;
-  color: var(--color03);
+  color: var(--text01);
   text-align: center;
   text-transform: capitalize;
   margin-bottom: 1rem;
@@ -36,7 +36,7 @@
   width: 100%;
   padding: 1rem 3rem;
   text-transform: capitalize;
-  color: var(--color05);
+  color: var(--text03);
   cursor: pointer;
   border-radius: 1rem;
   font-size: 1.4rem;
@@ -50,8 +50,8 @@
 }
 
 .items:hover {
-  background-color: var(--color03);
-  color: var(--color01);
+  background-color: var(--bg03);
+  color: var(--text02);
   box-shadow: var(--shadowMd);
 }
 

@@ -19,7 +19,7 @@ export default function ProjectImageLink({ project }) {
           href={project.live}
           target="_blank"
           rel="noopener"
-          aria-label="live preview"
+          aria-label={`live preview of ${project.title} demo project`}
         >
           <span>live preview</span>
           <FiExternalLink />
@@ -29,7 +29,7 @@ export default function ProjectImageLink({ project }) {
           href={project.code}
           target="_blank"
           rel="noopener"
-          aria-label="codebase"
+          aria-label={`full source code of ${project.title} demo project`}
         >
           <span>codebase</span>
           <FiGithub />

@@ -1,13 +1,31 @@
 :root {
-  --color01: #3d5a80;
-  --color02: #98c1d9;
-  --color03: #e0fbfc;
-  --color04: #ee6c4d;
-  --color05: #293241;
+  --accent01: #ee6c4d;
 
   --shadowSm: 0 0 1rem rgba(0, 0, 0, 0.1);
   --shadowMd: 0 0 0.75rem rgba(0, 0, 0, 0.25);
   --shadowLg: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+}
+:root.light-mode {
+  --bg01: #e0fbfc;
+  --bg02: #98c1d9;
+  --bg03: #3d5a80;
+
+  --textHero: #3d5a80;
+  --text01: #293241;
+  --text02: #1b1e24;
+  --text03: #e0fbfc;
+  --text04: #e0fbfc;
+}
+:root.dark-mode {
+  --bg01: #293241;
+  --bg02: #7494a6;
+  --bg03: #25364d;
+
+  --textHero: #98c1d9;
+  --text01: #e0fbfc;
+  --text02: #f8ffff;
+  --text03: #293241;
+  --text04: #edf0f0;
 }
 
 * {
@@ -29,8 +47,10 @@ html {
 body {
   max-width: 100vw;
   font-size: 1.6rem;
-  background-color: var(--color03);
+  background-color: var(--bg01);
   position: relative;
+  color: var(--text02);
+  transition: all 150ms;
 }
 
 main {
@@ -38,7 +58,7 @@ main {
   max-width: 200rem;
   margin: 0 auto;
   position: relative;
-  background-color: var(--color03);
+  background-color: var(--bg01);
   overflow-x: hidden;
 }
 

@@ -27,7 +27,7 @@ export default function Map() {
         <Geographies
           geography={geoUrl}
           strokeWidth={1}
-          style={{ stroke: "var(--color02)", fill: "var(--color03)" }}
+          style={{ stroke: "var(--bg02)", fill: "var(--bg01)" }}
         >
           {({ geographies }) =>
             geographies.map((geo) => (
@@ -49,7 +49,7 @@ export default function Map() {
           <text
             style={{
               fontSize: "1.6rem",
-              fill: "var(--color04)",
+              fill: "var(--accent01)",
               "text-anchor": "start",
               "alignment-baseline": "middle",
             }}

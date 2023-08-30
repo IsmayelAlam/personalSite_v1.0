@@ -3,6 +3,7 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/layout/NavBar";
 import { Toaster } from "react-hot-toast";
+import { DarkModeProvider } from "@/context/darkMode";
 
 const inter = Roboto({ subsets: ["latin"], weight: ["400"] });
 
@@ -41,9 +42,11 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className={inter.className}>
-        <NavBar />
-        {children}
-        <Toaster position="top-center" />
+        <DarkModeProvider>
+          <NavBar />
+          {children}
+          <Toaster position="top-center" />
+        </DarkModeProvider>
       </body>
     </html>
   );

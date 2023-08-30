@@ -7,7 +7,7 @@
 
   width: fit-content;
   height: 100vh;
-  background: var(--color02);
+  background: var(--bg02);
   padding: 5rem 2rem;
 
   position: fixed;
@@ -43,7 +43,7 @@
   padding: 1rem;
   border-radius: 50%;
   box-shadow: var(--shadowMd);
-  background-color: var(--color04);
+  background-color: var(--accent01);
   transition: all 100ms;
 }
 
@@ -59,7 +59,7 @@
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 900;
-  color: var(--color05);
+  color: var(--text01);
   outline: none;
   -webkit-tap-highlight-color: transparent;
 }

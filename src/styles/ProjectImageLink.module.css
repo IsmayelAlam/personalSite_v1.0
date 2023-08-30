@@ -1,5 +1,5 @@
 .imageLink {
-  background-color: var(--color02);
+  background-color: var(--bg02);
   border-radius: 1rem;
   box-shadow: var(--shadowSm);
 
@@ -37,17 +37,20 @@
   transition: all 200ms;
   text-transform: capitalize;
 
-  background-color: var(--color04);
-  color: var(--color03);
+  background-color: var(--accent01);
+  color: var(--text02);
   box-shadow: var(--shadowSm);
 }
 .btn:last-child {
   gap: 0.5rem;
   background-color: transparent;
   box-shadow: none;
-  color: var(--color05);
+  color: var(--text01);
 }
 
+.btn:hover {
+  color: var(--text03);
+}
 .btn:first-child:hover {
   gap: 1.75rem;
   padding-right: 1.25rem;

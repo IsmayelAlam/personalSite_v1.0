@@ -1,10 +1,9 @@
-import Image from "next/image";
 import { Nunito } from "next/font/google";
+import { BsFillSunFill } from "react-icons/bs";
 
 import { navigation } from "@/utils/data";
 import style from "@/styles/NavBar.module.css";
-import logo from "@/assets/logoDark.svg";
-import { BsFillSunFill } from "react-icons/bs";
+import Logo from "@/components/Logo";
 
 const nunito = Nunito({ subsets: ["latin"], weight: ["900", "600"] });
 
@@ -12,7 +11,7 @@ export default function NavBar() {
   return (
     <header>
       <nav className={style.sidebar}>
-        <Image src={logo} alt="logo" width={50} height={50} />
+        <Logo />
         <ul className={`${style.links} ${nunito.className}`}>
           {navigation.map((link) => (
             <li key={link.title}>
@@ -28,13 +27,7 @@ export default function NavBar() {
           ))}
         </ul>
         <div className={style.btn}>
-          <Image
-            src={logo}
-            alt="logo"
-            width={50}
-            height={50}
-            className={style.logo}
-          />
+          <Logo btnStyle={style.logo} />
         </div>
         <BsFillSunFill className={style.icons} />
       </nav>

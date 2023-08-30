@@ -76,6 +76,7 @@ const section = {
   border: "solid 2px #98c1d9",
   borderRadius: "5px",
   color: "#fff",
+  whiteSpace: "pre-line",
 };
 
 const button = {
