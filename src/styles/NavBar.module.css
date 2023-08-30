@@ -94,4 +94,7 @@
   .link > span {
     display: none;
   }
+  .btn {
+    right: 5%;
+  }
 }

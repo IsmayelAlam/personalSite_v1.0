@@ -51,7 +51,6 @@ body {
   background-color: var(--bg01);
   position: relative;
   color: var(--text02);
-  transition: all 150ms;
 }
 
 main {
@@ -61,6 +60,7 @@ main {
   position: relative;
   background-color: var(--bg01);
   overflow-x: hidden;
+  transition: all 150ms;
 }
 
 ::-webkit-scrollbar {

@@ -14,6 +14,7 @@ export default function Artwork() {
         alt="a guy using laptop vector art"
         width={700}
         height={700}
+        priority={true}
         className={style.static}
       />
       <Image
