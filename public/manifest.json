@@ -17,6 +17,12 @@
       "sizes": "144x144",
       "type": "image/png",
       "purpose": "any maskable"
+    },
+    {
+      "src": "/ms-icon-150x150.png",
+      "sizes": "150x150",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ],
   "theme_color": "#e0fbfc",
