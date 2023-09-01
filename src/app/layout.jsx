@@ -21,14 +21,26 @@ export default function RootLayout({ children }) {
         <link
           rel="icon"
           type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="18x18"
+          href="/favicon-18x18.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
           sizes="32x32"
           href="/favicon-32x32.png"
         />
         <link
           rel="icon"
           type="image/png"
-          sizes="16x16"
-          href="/favicon-16x16.png"
+          sizes="48x48"
+          href="/android-icon-48x48.png"
         />
         <link
           rel="icon"
@@ -42,6 +54,12 @@ export default function RootLayout({ children }) {
           type="image/png"
           sizes="192x192"
           href="/android-icon-192x192.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="512x512"
+          href="/android-chrome-512x512.png"
         />
 
         <link
