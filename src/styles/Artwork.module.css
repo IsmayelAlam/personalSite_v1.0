@@ -15,13 +15,13 @@
 }
 
 .css {
-  animation: float 7s cubic-bezier(0.44, 0.14, 0.58, 0.96) infinite 750ms;
+  animation: float 8s cubic-bezier(0.44, 0.14, 0.58, 0.96) infinite 750ms;
+}
+.javascript {
+  animation: float 7s cubic-bezier(0.44, 0.14, 0.58, 0.96) infinite 550ms;
 }
 .html {
   animation: float 6s cubic-bezier(0.44, 0.14, 0.58, 0.96) infinite;
-}
-.javascript {
-  animation: float 5s cubic-bezier(0.44, 0.14, 0.58, 0.96) infinite 550ms;
 }
 
 @keyframes float {
