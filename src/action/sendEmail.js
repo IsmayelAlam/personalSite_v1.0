@@ -2,6 +2,9 @@
 
 import EmailStyle from "@/components/EmailStyle";
 import { Resend } from "resend";
+import badWords from "bad-words";
+
+const wordFilter = new badWords();
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -10,11 +13,19 @@ export async function sendEmail(data) {
   const email = data.get("email");
   const message = data.get("message");
 
+  if (
+    wordFilter.isProfane(name) ||
+    wordFilter.isProfane(email) ||
+    wordFilter.isProfane(message)
+  )
+    return { error: "Profanity is not allowed" };
+
   if (!name || typeof name !== "string") return { error: "Invalid name" };
   if (!email || typeof name !== "string") return { error: "Invalid email" };
   if (!message || typeof name !== "string") return { error: "Invalid message" };
 
   let res = undefined;
+
   try {
     res = await resend.emails.send({
       from: "Portfolio <email@info.ismayelalam.com>",

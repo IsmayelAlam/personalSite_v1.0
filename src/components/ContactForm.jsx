@@ -7,6 +7,8 @@ import { sendEmail } from "@/action/sendEmail";
 import style from "../styles/ContactForm.module.css";
 import Button from "./Button";
 
+console.log(toast.promise);
+
 export default function ContactForm() {
   const ref = useRef();
 
@@ -15,7 +17,7 @@ export default function ContactForm() {
       className={style.form}
       action={async (data) => {
         try {
-          const { res, error } = await sendEmail(data);
+          const { error } = await sendEmail(data);
           error ? toast.error(error) : toast.success("Message sent!");
           ref.current.reset();
         } catch (error) {

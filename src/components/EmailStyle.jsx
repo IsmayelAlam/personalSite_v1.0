@@ -15,7 +15,7 @@ export default function EmailStyle({ name, email, message }) {
   return (
     <Html>
       <Head />
-      <Preview>{name} send a message</Preview>
+      <Preview>{message}</Preview>
       <Body style={main}>
         <Container style={container}>
           <Img
