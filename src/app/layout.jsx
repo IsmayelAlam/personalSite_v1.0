@@ -1,4 +1,5 @@
-import { Roboto } from "next/font/google";
+import { Inter } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 
 import "./globals.css";
 import NavBar from "@/layout/NavBar";
@@ -6,7 +7,7 @@ import { Toaster } from "react-hot-toast";
 import { DarkModeProvider } from "@/context/darkMode";
 import MetaData from "@/components/MetaData";
 
-const inter = Roboto({ subsets: ["latin"], weight: ["400"] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Ismayel Alam",
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
           {children}
           <Toaster position="top-center" />
         </DarkModeProvider>
+        <Analytics />
       </body>
     </html>
   );
