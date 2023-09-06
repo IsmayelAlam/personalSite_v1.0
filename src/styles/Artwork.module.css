@@ -18,10 +18,10 @@
   animation: float 8s cubic-bezier(0.44, 0.14, 0.58, 0.96) infinite 750ms;
 }
 .javascript {
-  animation: float 7s cubic-bezier(0.44, 0.14, 0.58, 0.96) infinite 550ms;
+  animation: float 9s cubic-bezier(0.44, 0.14, 0.58, 0.96) infinite;
 }
 .html {
-  animation: float 6s cubic-bezier(0.44, 0.14, 0.58, 0.96) infinite;
+  animation: float 7s cubic-bezier(0.44, 0.14, 0.58, 0.96) infinite 550ms;
 }
 
 @keyframes float {
