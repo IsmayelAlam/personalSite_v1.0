@@ -7,8 +7,6 @@ import { sendEmail } from "@/action/sendEmail";
 import style from "../styles/ContactForm.module.css";
 import Button from "./Button";
 
-console.log(toast.promise);
-
 export default function ContactForm() {
   const ref = useRef();
 
