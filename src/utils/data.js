@@ -22,28 +22,30 @@ export const navigation = [
   },
 ];
 
-export const skills = [
-  { title: "Javascript", logo: "/skills/javascript.svg" },
-  // { title: "nodeJS", logo: "/skills/nodejs.svg", },
-  { title: "html", logo: "/skills/html.svg" },
-  { title: "css", logo: "/skills/css.svg" },
+export const language = [
   { title: "react", logo: "/skills/react.svg" },
   { title: "nextJS", logo: "/skills/nextjs.svg" },
+  // { title: "nodeJS", logo: "/skills/nodejs.svg" },
+  { title: "Javascript", logo: "/skills/javascript.svg" },
+  { title: "html", logo: "/skills/html.svg" },
+  { title: "css", logo: "/skills/css.svg" },
   { title: "sass", logo: "/skills/sass.svg" },
   { title: "tailwind", logo: "/skills/tailwind.svg" },
   { title: "firebase", logo: "/skills/firebase.svg" },
   { title: "git", logo: "/skills/git.svg" },
-  // { title: "github", logo: "/skills/github.svg", },
+  // {
+  //   title: "responsive design",
+  //   logo: "/skills/responsiveWeb.svg",
+  // },
+];
+export const software = [
+  { title: "github", logo: "/skills/github.svg" },
   { title: "figma", logo: "/skills/figma.svg" },
   { title: "blender", logo: "/skills/blender.svg" },
   { title: "illustrator", logo: "/skills/illustrator.svg" },
   { title: "photoshop", logo: "/skills/photoshop.svg" },
-  // { title: "windows", logo: "/skills/windows.svg", },
+  // { title: "windows", logo: "/skills/windows.svg" },
   { title: "linux", logo: "/skills/linux.svg" },
-  {
-    title: "responsive design",
-    logo: "/skills/responsiveWeb.svg",
-  },
 ];
 
 export const projects = [

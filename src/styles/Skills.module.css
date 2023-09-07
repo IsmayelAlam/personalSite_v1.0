@@ -1,14 +1,19 @@
 .skills {
   width: 100%;
   margin: 2.5rem auto;
-  padding: 2rem 0;
+  padding: 2.5rem 5rem;
   background-color: var(--bg02);
   box-shadow: var(--shadowSm);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.animation {
-  display: flex;
-  align-items: center;
+.division1 {
+  border-right: var(--border02);
+}
+.division2 {
+  border-left: var(--border02);
 }
 
 .heading {
@@ -17,41 +22,37 @@
   color: var(--text01);
   text-align: center;
   text-transform: capitalize;
-  margin-bottom: 1rem;
+  padding: 2rem 0 1rem;
 }
 
 .list {
+  padding: 2rem;
   list-style: none;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  flex-wrap: wrap;
   gap: 2rem;
   align-items: center;
-  justify-content: center;
-  animation: slideshow 30s linear infinite;
-}
-.animation:hover > * {
-  animation-play-state: paused;
 }
 
 .items {
   width: 100%;
-  padding: 1rem 3rem;
+  height: 100%;
+  padding: 0.5rem 1rem;
   text-transform: capitalize;
   color: var(--text02);
   cursor: pointer;
   border-radius: 1rem;
-  font-size: 1.5rem;
-  text-align: center;
+  border: var(--border01);
 
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: 1rem;
 }
 
 .items:hover {
   background-color: var(--bg03);
-  color: var(--text04);
   box-shadow: var(--shadowMd);
 }
 
@@ -60,39 +61,65 @@
   height: 5rem;
 }
 
-@keyframes slideshow {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-100%);
+@media screen and (min-width: 125em) {
+  .skills {
+    border-radius: 2rem;
   }
 }
-
-@media screen and (max-width: 60em) {
+@media screen and (max-width: 90em) {
   .skills {
-    padding: 1rem 0;
+    grid-template-columns: 1fr;
   }
+  .division1 {
+    border-right: none;
+    border-bottom: var(--border02);
+  }
+  .division2 {
+    border-left: none;
+    border-top: var(--border02);
+  }
+}
+@media screen and (max-width: 60em) {
   .heading {
     font-size: 2.4rem;
     margin-bottom: 0.5rem;
   }
   .img {
-    width: 3.5rem;
-    height: 3.5rem;
-  }
-  .items {
-    padding: 1rem 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
   }
 }
+@media screen and (max-width: 40em) {
+  .skills {
+    padding: 0;
+  }
+  .list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .items {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 20em) {
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .items {
+    padding: 0.5rem 2rem;
+    font-size: 1.2rem;
+  }
+}
+
 @media screen and (max-width: 25em) {
   .heading {
     font-size: 1.6rem;
     margin-bottom: 0.25rem;
   }
-
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .items {
     font-size: 1rem;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
   }
 }
